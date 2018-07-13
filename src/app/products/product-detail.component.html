@@ -1,0 +1,13 @@
+<div class='card text-primary' *ngIf='product'>
+  <div class='card-header'>
+    {{productDetailTitle}}: {{product.productName}}
+  </div>
+  <img
+    [src]='product.imageUrl'
+    [title]='product.productName' 
+    [style.width.px] = 80
+    [style.margin.px] = 80>
+  <div class='card-body'>
+    <button type="button" class="btn btn-outline-primary" (click)='onBack()'>Back</button>
+  </div>
+</div>
